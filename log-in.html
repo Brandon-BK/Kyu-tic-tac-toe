@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swag.css">
+    <script src="game.js"></script>
+    <title>Rock, Paper & Scissor | Log-in Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/Rock Paper Scissors - Schere-Stein-Papier Spiel Essential T-Shirt von Julsz.jpeg" alt="logo" width="90">
+        <a href="http://127.0.0.1:5500/home.html">
+        <button class="login">
+                <h3>X</h3>
+            
+        </button>
+        </a>
+    </nav>
+
+    <main class="form-main">
+        <div class="heading">
+
+            <h1>
+                Sign Up / Log In
+            </h1>
+        </div>
+
+        <!-- This is where the inputs start... -->
+
+        <div class="form">
+          
+            <div>
+                <h3>
+                    User Name:
+                </h3>
+                <input type="text" id="name" required>
+            </div>
+
+            <div>
+                <h3>
+                    User Age:
+                </h3>
+                <input type="number" required id="age">
+               
+            </div>
+            
+            <div>
+                <h3>
+                    User Email:
+                </h3>
+                <input type="email" required id="email">
+            </div>
+
+            <div>
+                <h3>
+                    Password:
+                </h3>
+                <input type="text" required id="password" onkeyup="return validate()">
+            </div>
+        </div>
+        
+
+        <div class="sub-btn">
+            <button onclick="myFunction()" type="submit"  id="last">
+                Submit
+            </button>
+        
+        </div>
+        <!-- <p class="output" id="output1"></p>
+        <p class="output" id="output2"></p>
+        <p class="output" id="output3"></p> -->
+        <div id="error">
+          <ul>
+            <h3>For Password</h3>
+            <li id="upper">Atleast one uppercase</li>
+            <li id="lower">Atleast one lowercase</li>
+            <li id="number">Atleast one number</li>
+          </ul>
+        </div> 
+        <p id="result"></p>
+
+
+    </main>
+</body>
+</html>
